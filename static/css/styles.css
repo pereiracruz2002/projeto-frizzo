@@ -1,0 +1,584 @@
+*{margin:0; padding:0; list-style:none;}
+@font-face {
+  font-family: 'GarotaJoyaly';
+  src: url('garotajoyaly.eot');
+  src: url('garotajoyaly.eot?#iefix') format('embedded-opentype'),
+       url('garotajoyaly.woff') format('woff'),
+       url('garotajoyaly.ttf') format('truetype'),
+       url('garotajoyaly.svg#garotajoyaly') format('svg');
+     font-weight: normal;
+     font-style: normal;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+img{border:none;}
+body{
+  font:14px Arial;
+  color:#333;
+  background:url('../images/bg.gif') no-repeat bottom right;
+  }
+p{
+  line-height:20px;
+}
+.scroll{
+  height:300px;
+  overflow-y:scroll;
+  border:1px solid #999;
+  padding:10px;
+  margin-bottom:10px;
+}
+body#index{background:none;}
+header{
+  background:url('../images/header.png') no-repeat center top;
+  padding-top:242px;
+  }
+header .admin{
+  position:absolute;
+  width:150px;
+  margin-left:-75px;
+  text-align:center;
+  padding:15px 0;
+  background:#ccc;
+  color:#333;
+  top:10px;
+  left:50%;
+  border-radius:5px;
+}
+header nav{
+  width:810px;
+  margin:0 auto;
+  background:url('../images/bg_menu.png') no-repeat left bottom;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  height:66px;
+}
+header nav ul{
+  float:right;
+  padding: 10px 0 6px 12px;
+  margin-right:31px;
+}
+header nav ul li{
+  float:left;
+  position:relative;
+}
+header nav ul li a{
+  float:left;
+  text-align:center;
+  color:#fff;
+  font-weight:bold;
+  font-size:15px;
+  padding:10px;
+  text-decoration:none;
+  background:#FF3366;
+  text-transform:uppercase;
+  border:1px solid #990100;
+  -moz-box-shadow:5px 5px 5px #000000;
+  -webkit-box-shadow:5px 5px 5px #000000;
+  box-shadow:5px 5px 5px #000000;
+}
+header nav ul a:hover{
+  color:#000;
+  box-shadow:none;
+}
+section{clear:both;}
+.titulo{
+  background:url('../images/topo_dos_titulos.jpg') no-repeat;
+  padding-top:20px;
+  height:150px;
+}
+.titulo h1{float:left;}
+.titulo .descricao{
+  float:right;
+}
+.titulo .descricao p{
+  background:#f8ccc2;
+  color:#fff;
+  text-align:right;
+  }
+.titulo .descricao span{
+  background:#ff9fb8;
+  float:left;
+}
+#candidatas h2{
+  color:#EA0D8D;
+  font-size:18px;
+  padding:10px 0;
+}
+ul.candidatas{
+  background: url('../images/corpo.gif');
+  display:table;
+  padding:25px;
+  width:760px;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+.candidatas li{
+  float:left;
+  width:242px;
+  margin:5px;
+  text-align:center;
+}
+.candidatas li span{
+  display:block;
+  padding:10px 0;
+}
+.candidatas li span.foto{
+  background:#fff;
+  border:1px solid #ff0166;
+  height:188px;
+}
+.candidatas li span.foto a.first-child{
+  height:148px;
+  display:block;
+  overflow:hidden;
+  }
+.candidatas li span.nome a,
+.candidatas li span.nome{
+  background:#ea0d8e;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+.votar{
+  float:left;
+  background:#EA0D8E;
+  margin-top:10px;
+  color:#fff;
+  text-decoration:none;
+  padding:5px 10px;
+  border:1px solid #D74572;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -moz-box-shadow:inset -1px -1px 4px #000000;
+  -webkit-box-shadow:inset -1px -1px 4px #000000;
+  box-shadow:inset -1px -1px 4px #000000;
+}
+.candidatas .compartilhar{
+  float:right;
+  margin-top:8px;
+  background:#fff;
+  border:1px solid #ffccff;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  padding:4px;
+}
+.candidatas .loading{
+  float:left;  
+  margin-top:18px;
+}
+.candidatas .compartilhar span{padding:0;}
+.candidatas .compartilhar .fb-like{float:right;}
+.candidatas .votos, .candidatas .vtresultados{clear:both; text-align:left; color:#EA0D8E;}
+.clear{clear:both;}
+section#corpo{
+  width:810px;
+  margin:0 auto;
+}
+h1{
+  font-family:GarotaJoyaly;
+  font-size:54px;
+}
+footer{
+  clear:both;
+  background:#EA0D8E;
+  height:150px;
+  margin-top:140px;
+}
+footer nav{
+  width:810px;
+  margin:0 auto;
+  }
+footer nav li{float:left;}
+footer nav li.first-child a{
+  border:none;  
+}
+footer nav li a{
+  float:left;
+  margin:5px;
+  color:#fff;
+  text-decoration:none;
+  border-left:1px solid #fff;
+  padding-left:10px;
+}
+footer nav li a:hover{
+  color:#000;
+}
+fieldset{border:none;}
+form section {
+  width:50%;
+  padding:10px 0;
+  float:left;
+  clear:none;
+}
+form section.grande{width:99%;}
+form section.medio{width:32%;}
+form section.peq{width:14%;}
+form section label{
+  display:block;
+}
+
+form section input,
+form section textarea{
+  padding:2px;
+  border:1px solid #EA0D8D;
+  width:90%;
+}
+form section.grande textarea{width:99%;}
+form section textarea{height:90px;}
+.file input{border:none; width:auto;}
+
+.paginacao{
+  float:right;  
+}
+.paginacao li{float:left;}
+.paginacao li strong,
+.paginacao li a{
+  float:left;
+  padding:3px;
+  color:#ff3f8c; 
+  text-decoration:none;
+  margin:3px;
+  }
+.paginacao li.prev a,
+.paginacao li.next a{
+  background:url('../images/setas.gif') no-repeat -22px 0;
+  width:16px;
+  height:15px;
+  text-indent:-9000px;
+  overflow:hidden;
+  margin-top:6px;
+}
+.paginacao li.prev a{background:url('../images/setas.gif') no-repeat 0 0;}
+.paginacao li a:hover{color:#333;}
+  float:right;
+.paginacao li span{
+  width:4px;
+  height:2px;
+  background:#ff3f8c;
+  margin-top:13px;
+}
+
+#ranking .candidatas{
+  background:url('../images/bg_ranking.gif');
+  width:800px;
+  padding:5px;
+}
+#ranking .candidatas li{
+  width:150px;
+  background:#fff;
+  display:table;
+}
+#ranking .candidatas li img{
+  display:block;
+}
+#ranking .candidatas li .nome{
+  padding:10px;
+}
+#ranking .candidatas .votos, .candidatas .vtresultados{
+  clear:none;
+  text-align:center;
+}
+#ranking .candidatas li.first-child{
+  background-image:url('../images/estrelas.gif');
+  background-repeat:no-repeat;
+  background-position:315px 12px;
+}
+#home{
+  background:url('../images/box_home.png') no-repeat;
+  height:402px;
+  position:relative;
+}
+#home h1{
+  color:#fff;
+  text-align:center;
+  padding-top:52px;
+}
+#home a{
+  display:block;
+  position:absolute;
+  bottom:35px;
+  height:55px;
+  text-indent:-90000px;
+  overflow:hidden;
+}
+#home .entrar a{
+  right:68px;
+  width:125px;
+  background:url('../images/vote.png') no-repeat;
+}
+
+#home .inscritas a{
+  left:364px;
+  background:url('../images/inscritas.png') no-repeat;
+  width:191px;
+  
+}
+
+#home .inscrevase a{
+  background:url('../images/inscrevase.png') no-repeat;
+  width:214px;
+  left:85px;
+}
+#home .abertura{
+  position:absolute;
+  width:610px;
+  left:50%;
+  top:150px;
+  margin-left:-315px;
+  background:#AA2348;
+  padding:20px;
+  -moz-box-shadow: 3px 3px 15px #000000;
+  -webkit-box-shadow: 3px 3px 15px #000000;
+  box-shadow: 3px 3px 15px #000000;
+  color:#fff;
+}
+
+#ranking #bg_vencedora, .bg_perfil{
+  background:url('../images/corpo.gif');
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  padding:28px;
+}
+#ranking #vencedora{
+  border:1px solid #ff0166;
+  background:#fff;
+  display:table;
+  width:100%;
+  padding:10px 0;
+}
+.col-left{
+  float:left;
+  position:relative;
+  width:434px;
+  height:475px;
+  text-align:center;
+  background:url('../images/foto_vencedora.gif') no-repeat center 40px;
+  border-right:1px dashed #FF0066;
+}
+.col-left .foto{
+  margin-top:50px;
+}
+.col-left h2{
+  font-size:24px;
+  color:#ff0166;
+  padding:10px;
+}
+.col-left .nome{
+  position:absolute;
+  bottom:70px;
+  text-align:center;
+  width:369px;
+  left:34px;
+  color:#fff;
+  font-size:21px;
+  }
+.col-left p.last-child{
+  position:absolute;
+  bottom:10px;
+  width:100%;
+  font-size:18px;
+}
+
+.col-right{
+  float:right;
+  width:200px;
+  color:#FF0066;
+  margin-right:40px;
+  margin-top:80px;
+}
+.col-right h3{
+  font-size:18px;
+  padding-bottom:10px;
+}
+.col-right .fb-like{margin-top:50px;}
+
+
+/*PERFIL*/
+.body_perfil{
+  border:1px solid #EA0D8E;
+  display:table;
+  width:100%;
+  color:#EA0D8D;
+}
+.body_perfil h2{
+  background: #EA0D8E;
+  padding:5px 20px;
+  color:#fff;
+}
+.col-pic{
+  text-align:center;
+  float:left;
+  width:190px;
+  padding:10px 0;
+}
+.col-pic img{
+  border:2px solid #ccc;
+}
+.col-pic p strong{
+  color:#0066cc;
+}
+
+.col-desc{
+  border-left:1px dashed #EA0D8E;
+  float:left;
+  padding-left:28px;
+  padding-bottom:20px;
+  margin:20px 0;
+  width:500px;
+}
+.resp{color:#0066cc;}
+.caracteristicas{
+  background:#FF99CC;
+  padding:15px 10px;
+  float:right;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  width:200px;
+}
+.caracteristicas table{
+  border-collapse:collapse;
+  width:100%;
+  border-bottom:2px solid #EA0D8C;
+  }
+.caracteristicas td{
+  border:1px solid #EA0D8C;
+  padding:5px;
+  background:#fff;
+}
+.caracteristicas caption{
+  color:#003366;
+  text-align:left;
+  display:block;
+  padding-bottom:5px;
+}
+.body_perfil .acoes{
+  clear:both;
+  text-align:right;
+}
+.floatRight{float:right;}
+.body_perfil .floatRight{
+  margin-top:15px;
+  }
+.body_perfil .votar{float:right;}
+.body_perfil .acoes .votos{
+  float:right;
+  margin:17px 20px;
+  font-size:16px;
+  text-transform:uppercase;
+}
+
+.body_perfil .acoes .vtresultados { 
+  float:right;
+  font-size:16px;
+  text-transform:uppercase;}
+
+.body_perfil .frase{
+  margin-right:240px;
+}
+.body_perfil .frase p{
+  padding-top:20px;
+}
+
+#inscricao .descricao{
+  background:url('../images/bg_inscricao.gif') no-repeat right top;
+  padding-right:350px;
+  padding-bottom:40px;
+} 
+
+#inscricao h2{
+  color:#EA0D8D;
+  font-size:21px;
+  padding-bottom:18px;
+}
+#inscricao h3{
+  color:#EA0D8D;
+  font-size:18px;
+  padding-bottom:10px;
+}
+#inscricao h3 span{
+  float:left;
+  margin-top:-5px;
+  margin-right:5px;
+  background:#EA0D8D;
+  color:#fff;
+  padding:5px;
+  text-align:center;
+  width:21px;
+  border-radius:25px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+#inscricao fieldset{
+  padding:10px 0;
+}
+#inscricao fieldset.segundo{
+  border-top:1px dashed #EA0D8D;
+  border-bottom:1px dashed #EA0D8D;
+  padding:25px 0;
+  margin:20px 0;
+}
+form section {
+  width:50%;
+  padding:10px 0;
+  float:left;
+  clear:none;
+}
+form section.grande{width:99%;}
+form section.medio{width:32%;}
+form section.peq{width:13%;}
+form section label{
+  display:block;
+}
+
+form section input,
+form section textarea{
+  padding:2px;
+  border:1px solid #EA0D8D;
+  width:90%;
+}
+form section.grande textarea{width:99%;}
+form section textarea{height:90px;}
+.file input{border:none; width:auto;}
+.submit{
+  padding:5px 10px;
+  background:#EA0D8E;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+}
+
+.notification{
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  margin:10px 0;
+}
+.errors{
+  background:#FF3E3E;
+  border:1px solid #990000;
+}
+#inscricao .errors h2{
+  color:#fff;
+}
+.btn{
+  padding-top:20px;
+  }
+
+/*paginacao*/
+.paginacao a, .paginacao strong{
+  background: #EA0D8E;
+  color:#FFF;
+  border: 1px solid #EA0D8E;
+  display: block;
+  float: left;
+  margin-right: 3px;
+  margin-top: 10px;
+  padding: 5px;
+}
+

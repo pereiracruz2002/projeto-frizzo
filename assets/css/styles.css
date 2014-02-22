@@ -1,0 +1,58 @@
+body{
+  background:#f5f5f5;
+}
+.well{
+  background: #fff;
+  border: 1px solid #E3E3E3;
+  min-height:300px;
+}
+.cleafix{
+  clear:both;
+}
+.img-center{
+	text-align: center;
+}
+.modal-big{
+  width:800px;
+  margin-left:-400px;
+}
+.text-center{
+  text-align:center;  
+}
+.img-centered{
+  display: block;
+  margin: 0 auto;
+}
+.display-table{display:table;}
+.center{
+    text-align: center;
+}
+
+.txtdetailpedido{
+	float:left;
+  width:100%;
+}
+
+.boxSuggest{
+  display:inline-block;
+  position:relative;
+}
+.boxSuggest .dropdown-menu{
+  max-height:200px;
+}
+
+.boxSuggest .typehead {
+  overflow:auto;
+}
+.boxSuggest .typehead li a{
+  font-size:12px;
+}
+.boxSuggest .alert{position:absolute; top:100%; left:0; margin-top:2px;}
+
+#produtosSelecionados{
+  overflow:auto;
+}
+#produtosSelecionados ul{
+  width:auto;
+}
+.enderecos legend+.control-group{margin-top:0;}
